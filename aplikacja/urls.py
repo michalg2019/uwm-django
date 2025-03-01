@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from gry.views import wszystkie
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('wszystkie/', wszystkie),
+
 ]
